@@ -1,3 +1,109 @@
+*
+{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+/*------------------ HEADER ---------------------------*/
+
+header
+{
+    background-color: #122e3d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo-header
+{
+    margin: 20px;
+}
+
+#logo-header img
+{
+    width:250px;
+}
+
+nav ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li
+{
+    padding-left: 30px;
+    padding-right: 30px;
+    border-right: 1px white solid;
+}
+
+nav li:last-child
+{
+    border-right:none;
+}
+
+nav a
+{
+    text-decoration: none;
+    color:white;
+}
+
+/*------------------ FOOTER ---------------------------*/
+
+
+
+footer
+{
+    background-color: #122e3d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#infos-globales
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#infos-globales p
+{
+    color:rgb(238, 238, 238);
+}
+
+#logo-header
+{
+    margin: 20px;
+}
+
+#logo-header img
+{
+    width:200px;
+}
+
+#prestations
+{
+    padding:20px;
+}
+
+#contact-footer
+{
+    margin-top:20px;
+    padding: 15px;
+    border-left: 1px solid rgb( 238, 238, 238);
+}
+
+#copyright
+{
+    color:white;
+}
+
 .fa-brands
 {
     background-color: black;
