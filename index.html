@@ -23,16 +23,45 @@
     </header>
     <main>
         <section id = "banner">
-            <h1>RÉNOVATION DE BUREAU</h1>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/img/PHOTO-BUEAU.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/PHOTO-APPARTEMENT.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/PHOTO-MAISON.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
-        <section id="presentation">
-            <h2>ENTREPRISE DE RÉNOVATION</h2>
-            <p>
+        <section id="presentation" class="container">
+            <h2 class= "text-center ">ENTREPRISE DE RÉNOVATION</h2>
+            <p class ="text-center">
+                PEINTURE - PLOMBERIE - CHAUFFAGE - ÉLECTRICITÉ - MAÇONNERIE - PLÂTERIE - CARRELAGE - MENUISERIE - <br>
+                PARQUET - AGENCEMENT - ÉTUDE ET RÉALISATIONS DE PLANS
+            </p>
+            <p class= "text-center">
                 <strong>L'entreprise Espace Rénovation</strong> a été créée en 2002, pour suivre et aider ses clients dans les projets d'aménagement et de rénovation de l'habitat, de locaux commerciaux et de bureaux. Que ce soit un simple depannage, une rénovation complete ou partielle, <strong>Espace Renovation</strong> a votre ecoute. <strong>Espace Renovation</strong> peut conseiller des architectes décorateurs pour élaborer des plans et/ou orienter le client vers des choix de matériaux de couleur et d'ammeublement. <strong>Espace Renovation</strong> reste à votre disposition quelque soit votre projet
             </p>
-            <div id="service">
-                <div class = "service-card">
-                    <div class = service-illustration>
+            <div id="service" class ="row">
+                <div class = "service-card col-4 d-flex flex-column align-items-center">
+                    <div class = "service-illustration">
                         <img src="assets/img/93828360_227123028605867_1508679478300114944_n.png" alt="">
                     </div>
                     <h3>DEVIS GRATUIT</h3>
@@ -43,8 +72,8 @@
                         sur rendez-vous
                     </p>
                 </div>
-                <div class = "service-card">
-                    <div class = service-illustration>
+                <div class = "service-card col-4 d-flex flex-column align-items-center">
+                    <div class = "service-illustration">
                         <img src="assets/img/93826584_1037819840070668_7546887438975631360_n.png" alt="">
                     </div>
                     <h3>RÉNOVATION-AMÉNAGEMENT</h3>
@@ -56,8 +85,8 @@
                         plus fou!
                     </p>
                 </div>
-                <div class = "service-card">
-                    <div class = service-illustration>
+                <div class = "service-card col-4 d-flex flex-column align-items-center">
+                    <div class = "service-illustration">
                         <img src="assets/img/93831999_285641175762021_8901506698066264064_n.png" alt="">
                     </div>
                     <h3>CONSEIL DÉCO PLUS</h3>
@@ -71,91 +100,90 @@
                     </p>
                 </div>
             </div>
-            <div id = "lien-rdv">
-                <a href="">PRENDRE RENDEZ-VOUS</a>
+            <div class = "text-center">
+                <a href="" class="btn btn-dark p-3 px-5">PRENDRE RENDEZ-VOUS</a>
             </div>
         </section>
         <section id = "portfolio">
-            <h2>NOS DERNIÈRES RÉALISATIONS</h2>
-            <p>APPARTEMENTS - MAISONS - BUREAUX</p>
-            <div id = "gallery">
-                <div class = "example-card">
-                    <div class = "example-image">
-                        <img src="assets/img/Réalisations1.jpg" alt="photo intérieur">
-                        <p class = "example-title">RÉNOVATION ESPACE COWORKING</p>
-                        <p class = "example-location">92310 SÈVRES</p>
+            <h2 class= "text-center">NOS DERNIÈRES RÉALISATIONS</h2>
+            <p class= "text-center">APPARTEMENTS - MAISONS - BUREAUX</p>
+            <div id = "gallery" class = "container">
+                <div class = "row">
+                    <div class = "example-card col-4 d-flex flex-column align-items-center">
+                        <div class = "example-image">
+                            <img src="assets/img/Réalisations1.jpg" alt="photo intérieur">
+                        </div>
+                            <p class = "example-title">RÉNOVATION ESPACE COWORKING</p>
+                            <p class = "example-location">92310 SÈVRES</p>
+                    </div>
+                    <div class = "example-card col-4 d-flex flex-column align-items-center">
+                        <div class = "example-image">
+                            <img src="assets/img/Réalisations2.jpg" alt="photo intérieur">
+                        </div>
+                            <p class = "example-title">RÉNOVATION D'UNE MAISON</p>
+                            <p class = "example-location">91750 CHEVANNES</p>
+                    </div>
+                    <div class = "example-card col-4 d-flex flex-column align-items-center">
+                        <div class = "example-image">
+                            <img src="assets/img/Réalisations3.jpg" alt="photo intérieur">
+                        </div>
+                            <p class = "example-title">RÉNOVATION D'UN APPARTEMENT</p>
+                            <p class = "example-location">75017 PARIS</p>
                     </div>
                 </div>
-                <div class = "example-card">
-                    <div class = "example-image">
-                        <img src="assets/img/Réalisations2.jpg" alt="photo intérieur">
-                        <p class = "example-title">RÉNOVATION D'UNE MAISON</p>
-                        <p class = "example-location">91750 CHEVANNES</p>
+                <div class = "row">
+                    <div class = "example-card col-4 d-flex flex-column align-items-center">
+                        <div class = "example-image">
+                            <img src="assets/img/Réalisations4.jpg" alt="photo intérieur">
+                        </div>
+                            <p class = "example-title">RENOVATION D'UN APPARTEMENT</p>
+                            <p class = "example-location">75009 PARIS</p>
                     </div>
-                </div>
-                <div class = "example-card">
-                    <div class = "example-image">
-                        <img src="assets/img/Réalisations3.jpg" alt="photo intérieur">
-                        <p class = "example-title">RÉNOVATION D'UN APPARTEMENT</p>
-                        <p class = "example-location">75017 PARIS</p>
+                    <div class = "example-card col-4 d-flex flex-column align-items-center">
+                        <div class = "example-image">
+                            <img src="assets/img/Réalisations5.jpg" alt="photo intérieur">
+                        </div>
+                            <p class = "example-title">RÉNOVATION D'UN TRIPLEX</p>
+                            <p class = "example-location">92100 BOULLOGNE-BILLANCOURT</p>
                     </div>
-                </div>
-                <div class = "example-card">
-                    <div class = "example-image">
-                        <img src="assets/img/Réalisations4.jpg" alt="photo intérieur">
-                        <p class = "example-title">RENOVATION D'UN APPARTEMENT</p>
-                        <p class = "example-location">75009 PARIS</p>
-                    </div>
-                </div>
-                <div class = "example-card">
-                    <div class = "example-image">
-                        <img src="assets/img/Réalisations5.jpg" alt="photo intérieur">
-                        <p class = "example-title">RÉNOVATION D'UN TRIPLEX</p>
-                        <p class = "example-location">92100 BOULLOGNE-BILLANCOURT</p>
-                    </div>
-                </div>
-                <div class = "example-card">
-                    <div class = "example-image">
-                        <img src="assets/img/Réalisations6.jpg" alt="photo intérieur">
-                        <p class = "example-title">RENOVATION D'IJN APPARTEMENT</p>
-                        <p class = "example-location">92300 LEVALLOIS-PERRET</p>
+                    <div class = "example-card col-4 d-flex flex-column align-items-center">
+                        <div class = "example-image">
+                            <img src="assets/img/Réalisations6.jpg" alt="photo intérieur">
+                        </div>
+                            <p class = "example-title">RENOVATION D'IJN APPARTEMENT</p>
+                            <p class = "example-location">92300 LEVALLOIS-PERRET</p>
                     </div>
                 </div>
             </div>
-            <div id = "lien-projet">
-                <a href="">VOIR + DE PROJETS</a>
+            <div class = "text-center">
+                <a href="" class="btn btn-dark p-3 px-5">VOIR + DE PROJETS</a>
             </div>
         </section>
-        <section id = "contact">
-            <h2>RÉALISER VOTRE PROJET AVEC NOUS</h2>
-            <p>NOS COORDONNÉES</p>
-            <div id = "contact-option">
-                <div id = "contact-card">
-                    <div class = "contact">
-                        <div class = "contact-illustration">
-                            <img src="assets/img/PictoBureaux.png" alt="Picto">
-                        </div>
-                        <h3>À NOS BUREAUX</h3>
-                        <p>43 rue boursault<br>75017</p>
+        <section id = "contact" class = "container">
+            <h2 class= "text-center">RÉALISER VOTRE PROJET AVEC NOUS</h2>
+            <p class= "text-center">NOS COORDONNÉES</p>
+            <div id = "contact-option" class = "row">
+                <div class = "contact-card col-4 d-flex flex-column align-items-center">
+                    <div class = "contact-illustration">
+                        <img src="assets/img/PictoBureaux.png" alt="Picto">
                     </div>
+                    <h3>À NOS BUREAUX</h3>
+                    <p>43 rue boursault<br>75017</p>
+                    
                 </div>
-                <div id = "contact-card">
-                    <div class = "contact">
-                        <div class = "contact-illustration">
-                            <img src="assets/img/PictoMail.png" alt="Picto">
-                        </div>
-                        <h3>PAR E-MAIL OU TÉLÉPHONE</h3>
-                        <p>01 40 05 94 10<br>06 80 98 66 93<br>info@espace-renovation.fr</p>
+                <div class = "contact-card col-4 d-flex flex-column align-items-center">
+                    <div class = "contact-illustration">
+                        <img src="assets/img/PictoMail.png" alt="Picto">
                     </div>
+                    <h3>PAR E-MAIL OU TÉLÉPHONE</h3>
+                    <p>01 40 05 94 10<br>06 80 98 66 93<br>info@espace-renovation.fr</p>
                 </div>
-                <div id = "contact-card">
-                    <div class = "contact">
-                        <div class = "contact-illustration">
-                            <img src="assets/img/PictoForm.png" alt="Picto">
-                        </div>
-                        <h3>PAR FORMULAIRE</h3>
-                        <p>A remplir ici</p>
+                <div class = "contact-card col-4 d-flex flex-column align-items-center">
+                    <div class = "contact-illustration">
+                        <img src="assets/img/PictoForm.png" alt="Picto">
                     </div>
+                    <h3>PAR FORMULAIRE</h3>
+                    <p>A remplir ici</p>
                 </div>
             </div>
         </section>
